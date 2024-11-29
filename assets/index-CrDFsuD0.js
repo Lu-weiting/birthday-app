@@ -149,6 +149,7 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
 `,Kx=Be(kr)`
   font-size: 2.3rem;
   margin-top: 2rem;
+  height: 100%;
 `,Gx=Be.div`
   font-size: 2rem;
   color: #000;
@@ -271,7 +272,7 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
   .hat {
     position: absolute;
     left: 41.5%;
-    top: -35%;
+    top: -20%;
     width: 80px;
 
     @media screen and (max-height: 1000px) {
@@ -392,10 +393,9 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
 
   span {
     display: inline-block;
-    // visibility: hidden;
   }
 `,ak=Be.div`
-  .wish h5 {
+  .wish h2 {
     font-size: 2rem;
     font-weight: lighter;
     margin: 10px 0 0;
@@ -405,7 +405,7 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
     }
   }
 `,uk=Be(kr)`
-  height: 100%;
+  height: 100vh;
   p {
     font-size: 3.3rem;
 
