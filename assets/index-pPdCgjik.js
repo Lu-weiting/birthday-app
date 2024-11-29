@@ -262,7 +262,7 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
 
   img {
     display: inline-block;
-    height: auto;
+    height: 350px;
     max-width: 100%;
   }
 
@@ -300,7 +300,7 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
     position: absolute;
 
     &:nth-child(even) {
-      left: 1%;
+      left: -20%;
     }
 
     &:nth-child(odd) {
@@ -403,7 +403,7 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
   }
 `,uk=Be(kr)`
   height: 100vh;
-  top: 10vh;
+  top: 7vh;
   p {
     font-size: 3.3rem;
 
