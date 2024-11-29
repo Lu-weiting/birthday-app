@@ -156,7 +156,7 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
   margin-left: 1.5rem;
 `,Zx=Ie(kr)`
   display: flex;
-  margin-top: 8rem;
+  margin-top: 5rem;
   justify-content: center;
   align-items: center;
 `,Jx=Ie.div`
@@ -259,7 +259,6 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
   }
 `,rk=Ie(kr)`
   position: relative;
-  top: 10vh;
   z-index: 1;
   height: 100%;
 
