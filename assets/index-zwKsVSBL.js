@@ -261,6 +261,7 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
   position: relative;
   top: 10vh;
   z-index: 1;
+  height: 100%;
 
   img {
     display: inline-block;
@@ -386,7 +387,7 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
     }
   }
 `,lk=Ie.h3`
-  font-size: 3em;
+  font-size: 2.7em;
   margin: 0;
   text-transform: uppercase;
 
