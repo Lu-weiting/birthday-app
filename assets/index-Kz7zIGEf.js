@@ -426,7 +426,7 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
   font-size: 2rem;
 `;const ck=Me(Yn)`
   height: 100vh;
-  top: 7vh;
+  top: 4vh;
   p {
     font-size: 3.3rem;
 
