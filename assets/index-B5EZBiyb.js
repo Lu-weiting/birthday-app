@@ -410,6 +410,7 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
     }
   }
 `,uk=Be(kr)`
+  height: 100%;
   p {
     font-size: 3.3rem;
 
