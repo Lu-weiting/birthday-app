@@ -122,9 +122,8 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
   magin-top: 3rem;
   font-size: 3.2rem;
 `,Xx=Be.div`
-  height: 100%;
+  height: 100vh;
   margin: 0 auto;
-  overflow: hidden;
   position: relative;
   text-align: center;
   visibility: hidden;
