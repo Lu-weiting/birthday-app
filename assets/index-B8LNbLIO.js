@@ -212,18 +212,13 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
   }
     .final1 {
         font-size: 3rem;
-        top: 20vh;
     }
     .final1-5 {
       4rem;
-      top: 20vh;
     }
     .final2 {
       font-size: 3rem;
     }
-      .final4 {
-        top: 20vh;
-      }
 `,nk=Be(kr)`
   font-size: 2rem;
   left: 0;
