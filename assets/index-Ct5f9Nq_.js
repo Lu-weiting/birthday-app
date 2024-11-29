@@ -158,10 +158,9 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
   img {
     width: 300px; /* 根據需要調整大小 */
     height: auto;
-    margin-top: 1rem;
 
     @media screen and (max-width: 500px) {
-      width: 400px; /* 手機版調整大小 */
+      width: 300px; /* 手機版調整大小 */
     }
   }
 `,Gx=Me(Yn)`
