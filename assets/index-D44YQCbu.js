@@ -271,7 +271,7 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
   .hat {
     position: absolute;
     left: 41.5%;
-    top: -20%;
+    top: -50%;
     width: 80px;
 
     @media screen and (max-height: 1000px) {
