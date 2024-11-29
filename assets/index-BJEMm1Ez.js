@@ -156,7 +156,7 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
 `;const Kx=Me(Yn)`
   font-size: 2.3rem;
   img {
-    width: 400px; /* 根據需要調整大小 */
+    width: 300px; /* 根據需要調整大小 */
     height: auto;
     margin-top: 1rem;
 
