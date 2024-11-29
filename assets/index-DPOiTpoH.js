@@ -314,15 +314,15 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
     }
   }
 `,ok=Be.div`
-  height: 100vh;
+  height: 100%;
   position: fixed;
   top: 0;
   width: 100vw;
 `,sk=Be.div`
-  height: 100vh;
+  height: 100%;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
 
   svg {
     position: absolute;
@@ -333,25 +333,25 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
 
     &:nth-child(1) {
       fill: #bd6ecf;
-      left: 5vw;
+      left: 1vw;
       top: 7vh;
     }
 
     &:nth-child(2) {
       fill: #7dd175;
-      left: 35vw;
+      left: 30vw;
       top: 23vh;
     }
 
     &:nth-child(3) {
       fill: #349d8b;
-      left: 23vw;
+      left: 20vw;
       top: 33vh;
     }
 
     &:nth-child(4) {
       fill: #347a9d;
-      left: 57vw;
+      left: 50vw;
       top: 43vh;
     }
 
@@ -404,7 +404,7 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
     }
   }
 `,uk=Be(kr)`
-  height: 100vh;
+  height: 100%;
   p {
     font-size: 3.3rem;
 
