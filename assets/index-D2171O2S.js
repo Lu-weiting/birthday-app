@@ -126,6 +126,7 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
   margin: 0 auto;
   position: relative;
   text-align: center;
+  overflow: hidden;
   visibility: hidden;
   width: 100vw;
   font-family: 'Poppins', sans-serif;
@@ -136,7 +137,6 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
   top: 20vh;
 `,Qx=Be(kr)`
   font-size: 3.3rem;
-  margin-top: 3rem;
   display: flex;
   flex-direction: column;
 `;Be(kr)`
@@ -144,11 +144,10 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
   font-weight: lighter;
 `;const qx=Be(kr)`
   font-size: 2.3rem;
-  margin-top: 8rem;
+//   margin-top: 8rem;
 `,Kx=Be(kr)`
   font-size: 2.3rem;
   margin-top: 2rem;
-  height: 100%;
 `,Gx=Be.div`
   font-size: 2rem;
   color: #000;
@@ -156,7 +155,6 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
   margin-left: 1.5rem;
 `,Zx=Be(kr)`
   display: flex;
-  margin-top: 5rem;
   justify-content: center;
   align-items: center;
 `,Jx=Be.div`
@@ -260,7 +258,6 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
 `,rk=Be(kr)`
   position: relative;
   z-index: 1;
-  height: 100%;
 
   img {
     display: inline-block;
@@ -271,7 +268,7 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
   .hat {
     position: absolute;
     left: 41.5%;
-    top: -50%;
+    top: -40%;
     width: 80px;
 
     @media screen and (max-height: 1000px) {
@@ -314,15 +311,15 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
     }
   }
 `,ok=Be.div`
-  height: 100%;
+  height: 100vh;
   position: fixed;
   top: 0;
   width: 100vw;
 `,sk=Be.div`
-  height: 100%;
+  height: 100vh;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
 
   svg {
     position: absolute;
@@ -333,25 +330,25 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
 
     &:nth-child(1) {
       fill: #bd6ecf;
-      left: 1vw;
+      left: 5vw;
       top: 7vh;
     }
 
     &:nth-child(2) {
       fill: #7dd175;
-      left: 30vw;
+      left: 35vw;
       top: 23vh;
     }
 
     &:nth-child(3) {
       fill: #349d8b;
-      left: 20vw;
+      left: 23vw;
       top: 33vh;
     }
 
     &:nth-child(4) {
       fill: #347a9d;
-      left: 50vw;
+      left: 57vw;
       top: 43vh;
     }
 
@@ -404,7 +401,7 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
     }
   }
 `,uk=Be(kr)`
-  height: 100%;
+  height: 100vh;
   p {
     font-size: 3.3rem;
 
