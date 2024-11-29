@@ -294,17 +294,18 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
   }
 `,ik=Be.div`
   position: absolute;
-    
+    width: 100%;
+    height: 100%;
   img {
     display: inline-block;
     position: absolute;
 
     &:nth-child(even) {
-      left: -20%;
+      left: -40%;
     }
 
     &:nth-child(odd) {
-      right: 10%;
+      right: 70%;
     }
 
     &:nth-child(3n + 0) {
