@@ -258,6 +258,7 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
 `,rk=Be(kr)`
   position: relative;
   z-index: 1;
+  height: 100vh;
 
   img {
     display: inline-block;
@@ -293,21 +294,21 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
   }
 `,ik=Be.div`
   position: absolute;
-
+    
   img {
     display: inline-block;
     position: absolute;
 
     &:nth-child(even) {
-      left: -10%;
+      left: 1%;
     }
 
     &:nth-child(odd) {
-      right: -10%;
+      right: 10%;
     }
 
     &:nth-child(3n + 0) {
-      left: 30%;
+      left: 20%;
     }
   }
 `,ok=Be.div`
