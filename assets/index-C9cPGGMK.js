@@ -122,7 +122,7 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
   magin-top: 3rem;
   font-size: 3.2rem;
 `,Xx=Ie.div`
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -152,6 +152,8 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
 `,Gx=Ie.div`
   font-size: 2rem;
   color: #000;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
 `,Zx=Ie(kr)`
   display: flex;
   margin-top: 10rem;
@@ -198,6 +200,8 @@ https://sweetalert2.github.io/#ajax-request`),__(i),typeof i.title=="string"&&(i
   left: 0;
   right: 0;
   top: 30vh;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
   position: absolute;
   p {
     position: absolute;
