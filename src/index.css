@@ -10,4 +10,8 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
+  padding: 0;
+  overflow: hidden; /* 禁止滾動 */
+  height: 100%;
+  width: 100%;
 }

@@ -4,10 +4,15 @@ import Swal from 'sweetalert2';
 import { gsap } from 'gsap';
 import {
   Container,
+  Image2,
+  Zero,
   One,
-  Two,
+  NineP,
+  To,
   Three,
+  Three2,
   Four,
+  Four2,
   TextBox,
   FakeBtn,
   Five,
@@ -20,12 +25,17 @@ import {
   Nine,
   StartText,
   StartButton,
+  Final,
 } from './components/StyledComponents';
-import ireneImage from './assets/irene.jpg';
+import mimiImage from './assets/mimi.jpeg';
 import hatImage from './assets/hat.svg';
 import ballon1 from './assets/ballon1.svg';
 import ballon2 from './assets/ballon2.svg';
 import ballon3 from './assets/ballon3.svg';
+import bula2 from './assets/bula-4.gif';
+import hero from './assets/hero.gif';
+import thank from './assets/image.png';
+import bImage from './assets/b.jpeg';
 import './index.css'; // 如果有全局樣式
 
 function App() {
@@ -42,9 +52,9 @@ function App() {
 
   // 點擊「點擊開始」文字時觸發
   const handleStartClick = () => {
-    // 顯示 SweetAlert 「嘿嘿 !」
+    
     Swal.fire({
-      title: '嘿嘿 😋!',
+      title: '🤪',
       icon: 'success',
       confirmButtonText: '真的開始',
     }).then(() => {
@@ -57,7 +67,7 @@ function App() {
   // 點擊按鈕時觸發
   const handleButtonClick = () => {
     Swal.fire({
-      title: '點按鈕的是笨蛋',
+      title: 'It’s a fake button—gotcha!',
       icon: 'warning',
       confirmButtonText: '再試一次',
     }).then(() => {
@@ -80,51 +90,58 @@ function App() {
     tl.to(containerRef.current, { visibility: 'visible', duration: 0.6 });
 
     // 一開始的文字動畫
-    tl.from('.one', { opacity: 0, y: 10, duration: 0.7 })
-      .from('.two', { opacity: 0, y: 10, duration: 0.4 }, '-=0.5')
-      .to('.one', { opacity: 0, y: 10, duration: 0.7 }, '+=3.5')
-      .to('.two', { opacity: 0, y: 10, duration: 0.7 }, '-=1')
+    tl.from('.one', { opacity: 0, y: 10, duration: 0.6 })
+      .to('.one', { opacity: 0, y: 10, duration: 0.6 }, '+=1.5')
+      .from('.two', { opacity: 0, y: 10, duration: 0.7 })
+      .to('.two', { opacity: 0, y: 10, duration: 0.7 }, '+=3')
       .from('.three', { opacity: 0, y: 10, duration: 0.7 })
       .to('.three', { opacity: 0, y: 10, duration: 0.7 }, '+=3')
-      .from('.four', { scale: 0.2, opacity: 0, duration: 0.7 })
-      .from('.fake-btn', { scale: 0.2, opacity: 0, duration: 0.3 })
+      .from('.three2', { opacity: 0, y: 10, duration: 0.6 })
+      .from('.fake-btn', { scale: 0.2, opacity: 0, duration: 0.2 })
       .to('.hbd-chatbox span', {
         visibility: 'visible',
         stagger: 0.05,
-        duration: 1.5,
+        duration: 0.6,
       })
-      .to('.fake-btn', { backgroundColor: 'rgb(127, 206, 248)', duration: 0.1 }, '+=4')
-      .to('.four', { scale: 0.2, opacity: 0, y: -150, duration: 0.5 }, '+=1')
-      .from('.idea-1', { opacity: 0, y: -20, rotationX: 5, skewX: '15deg', duration: 0.7 })
-      .to('.idea-1', { opacity: 0, y: 20, rotationY: 5, skewX: '-15deg', duration: 0.7 }, '+=2.5')
-      .from('.idea-2', { opacity: 0, y: -20, rotationX: 5, skewX: '15deg', duration: 0.7 })
-      .to('.idea-2', { opacity: 0, y: 20, rotationY: 5, skewX: '-15deg', duration: 0.7 }, '+=2.5')
-      .from('.idea-3', { opacity: 0, y: -20, rotationX: 5, skewX: '15deg', duration: 0.7 })
-      .to('.idea-3 strong', {
+      .to('.fake-btn', { backgroundColor: 'rgb(127, 206, 248)', duration: 0.1 }, '+=1')
+      .to('.three2', { scale: 0.2, opacity: 0, y: -150, duration: 0.5 }, '+=1')
+      .from('.four', { scale: 0.2, opacity: 0, duration: 0.7 })
+      .to('.four strong', {
         scale: 1.2,
         x: 10,
         backgroundColor: 'rgb(21, 161, 237)',
         color: '#fff',
         duration: 0.5,
       })
-      .to('.idea-3', { opacity: 0, y: 20, rotationY: 5, skewX: '-15deg', duration: 0.7 }, '+=2.5')
-      .from('.idea-4', { opacity: 0, y: -20, rotationX: 5, skewX: '15deg', duration: 0.7 })
-      .to('.idea-4', { opacity: 0, y: 20, rotationY: 5, skewX: '-15deg', duration: 0.7 }, '+=2.5')
-      .from('.idea-5', {
-        rotationX: 15,
-        rotationZ: -10,
-        skewY: '-5deg',
-        y: 50,
-        z: 10,
-        opacity: 0,
-        duration: 0.7,
-      })
-      .to('.idea-5 span', {
-        rotation: 90,
-        x: 8,
-        duration: 0.7,
-      }, '+=1.4')
-      .to('.idea-5', { scale: 0.2, opacity: 0, duration: 0.7 }, '+=2')
+      .to('.four', { scale: 0.2, opacity: 0, y: -150, duration: 0.6 }, '+=3')
+      // .from('.idea-2', { opacity: 0, y: -20, rotationX: 5, skewX: '15deg', duration: 0.7 })
+      // .to('.idea-2', { opacity: 0, y: 20, rotationY: 5, skewX: '-15deg', duration: 0.7 }, '+=2.5')
+      // .from('.idea-3', { opacity: 0, y: -20, rotationX: 5, skewX: '15deg', duration: 0.7 })
+      // .to('.idea-3 strong', {
+      //   scale: 1.2,
+      //   x: 10,
+      //   backgroundColor: 'rgb(21, 161, 237)',
+      //   color: '#fff',
+      //   duration: 0.5,
+      // })
+      // .to('.idea-3', { opacity: 0, y: 20, rotationY: 5, skewX: '-15deg', duration: 0.7 }, '+=2.5')
+      // .from('.idea-4', { opacity: 0, y: -20, rotationX: 5, skewX: '15deg', duration: 0.7 })
+      // .to('.idea-4', { opacity: 0, y: 20, rotationY: 5, skewX: '-15deg', duration: 0.7 }, '+=2.5')
+      // .from('.idea-5', {
+      //   rotationX: 15,
+      //   rotationZ: -10,
+      //   skewY: '-5deg',
+      //   y: 50,
+      //   z: 10,
+      //   opacity: 0,
+      //   duration: 0.7,
+      // })
+      // .to('.idea-5 span', {
+      //   rotation: 90,
+      //   x: 8,
+      //   duration: 0.7,
+      // }, '+=1.4')
+      // .to('.idea-5', { scale: 0.2, opacity: 0, duration: 0.7 }, '+=2')
       .from('.idea-6 span', {
         scale: 3,
         opacity: 0,
@@ -179,7 +196,7 @@ function App() {
         stagger: 0.1,
         duration: 0.7,
       }, 'party')
-      .from('.wish h5', {
+      .from('.wish h2', {
         opacity: 0,
         y: 10,
         skewX: '-15deg',
@@ -195,7 +212,18 @@ function App() {
         duration: 1.5,
       })
       .to('.six', { opacity: 0, y: 30, zIndex: '-1', duration: 0.5 })
+      .from('.final1', { opacity: 0, y: -20, rotationX: 5, skewX: '15deg', duration: 0.8 })
+      .to('.final1', { opacity: 0, y: 20, rotationY: 5, skewX: '-15deg', duration: 0.8 }, '+=2.5')
+      .from('.final2', { opacity: 0, y: -20, rotationX: 5, skewX: '15deg', duration: 0.8 })
+      .to('.final2', { opacity: 0, y: 20, rotationY: 5, skewX: '-15deg', duration: 0.8 }, '+=2.5')
+      .from('.final3', { opacity: 0, y: -20, rotationX: 5, skewX: '15deg', duration: 0.8 })
+      .to('.final3', { opacity: 0, y: 20, rotationY: 5, skewX: '-15deg', duration: 0.8 }, '+=2.5')
+      .from('.final4', { opacity: 0, y: -20, rotationX: 5, skewX: '15deg', duration: 0.8 })
+      .to('.final4', { opacity: 0, y: 20, rotationY: 5, skewX: '-15deg', duration: 0.8 }, '+=2.5')
+      .from('.final5', { opacity: 0, y: -20, rotationX: 5, skewX: '15deg', duration: 0.8 })
+      .to('.final5', { opacity: 0, y: 20, rotationY: 5, skewX: '-15deg', duration: 0.8 }, '+=2.5')
       .from('.nine p', { opacity: 0, y: -20, rotationX: 5, skewX: '15deg', stagger: 1.2, duration: 1 })
+      .from('.nine span', { opacity: 0, y: -20, rotationX: 5, skewX: '15deg', stagger: 1.2, duration: 1 })
       .to('.last-smile', { rotation: 90, duration: 0.5 }, '+=1');
 
     // 儲存時間線以便後續重啟
@@ -207,60 +235,63 @@ function App() {
       {/* 初始畫面：點擊開始文字和按鈕 */}
       {!isAnimating && (
         <div>
-          <StartText onClick={handleStartClick}>點擊開始</StartText>
-          <StartButton onClick={handleButtonClick}>按鈕</StartButton>
+          <StartText onClick={handleStartClick}>click here</StartText>
+          <StartButton onClick={handleButtonClick}>Button</StartButton>
         </div>
       )}
 
       {/* 動畫容器 */}
       <Container ref={containerRef}>
         <One className="one">
-          <h1 className="one">
-            Yo <span id="name">楊 mimi</span>
-          </h1>
-          <Two className="two" id="greetingText">
-            我真的很喜歡你的名字！
-          </Two>
+          <To> To </To>
+          <h2 className="one">
+            <span id="name">Brian</span>
+          </h2>
         </One>
+        <Zero className="two">
+            <p> Thanks so much for looking after me and my mom.</p>
+            <img src={thank} alt="" />
+        </Zero>
 
         <Three className="three">
-          <p>今天是你的生日！！ :D</p>
+          <p> you are just like hero</p>
+          <p> 🔥</p>
+          <img src={hero} alt="" />
         </Three>
-
-        <Four className="four">
+        <Three2 className="three2" >
+          <p className='three2'>Today</p>
+          <p> I want to say</p>
           <TextBox className="text-box">
             <p className="hbd-chatbox">
-              {splitText('生日快樂！！願你的每一天都充滿快樂和驚喜！')}
+              {splitText("Happ Father's Day")}
             </p>
             <FakeBtn className="fake-btn">發送</FakeBtn>
           </TextBox>
+        </Three2>
+        <Four className="four">
+          <Four2 className="four">
+            <p> hope you like this gift and</p>
+            <p> have a <strong>great day!!</strong></p>
+          </Four2>
         </Four>
 
         <Five className="five">
-          <p className="idea-1">那是我本來要做的。</p>
-          <p className="idea-2">但後來我停下了。</p>
-          <p className="idea-3">
-            我意識到，我想做一些<br />
-            <strong>特別的</strong>。
-          </p>
-          <p className="idea-4">因為，</p>
-          <p className="idea-5">
-            你很特別 <span>:)</span>
-          </p>
+          
           <p className="idea-6">
-            <span>S</span>
-            <span>O</span>
+            <span>A</span>
+            <span>N</span>
+            <span>D</span>
           </p>
         </Five>
 
         <Six className="six">
-          <img src={ireneImage} alt="個人照片" className="profile-picture" id="imagePath" />
-          <img src={hatImage} alt="帽子" className="hat" />
+          <img src={bImage} alt="個人照片" className="profile-picture" id="imagePath" />
+          <Image2 src={hatImage} alt="帽子" className="hat" />
           <Wish className="wish">
             <WishHBD className="wish-hbd">
-              {splitText('生日快樂！')}
+              {splitText('HAPPY DAD’S DAY')}
             </WishHBD>
-            <h5 id="wishText">願你的夢想都能實現！;)</h5>
+            <h2 id="wishText"> All The Best</h2>
           </Wish>
         </Six>
 
@@ -283,21 +314,44 @@ function App() {
             </svg>
           ))}
         </Eight>
+        {/* <Final>
+          <p className="final1">
+            不知道以後我們會怎麼樣
+            <p className='final1-5'>但！</p>
+          </p>
+          <p className="final2">很開心能與你相遇</p>
+          <p className="final3">
+            對我來說
+          </p>
+          <p className="final4">
+            因為你<br />
+            我大學的青春 <br />
+            足矣
+          </p>
+          <p className="final5">
+            祝我們都要快樂 😋
+          </p>
+        </Final> */}
 
-        <Nine className="nine">
-          <p>好了，現在回來告訴我你是否喜歡。</p>
+        {/* <Nine className="nine">
+          <p>想聽更多心裡話？</p>
+          <p>來杯酒再說😋</p>
+          <span>
+            不知道你有沒有看到最後<br />
+            但希望這個禮物能幫助你多少舒緩生理期的痛xd
+          </span>
           <p id="replay" onClick={() => {
             // 重置動畫容器
             if (timelineRef.current) {
-              timelineRef.current.kill(); // 停止動畫
+              timelineRef.current.kill();
             }
             gsap.to(containerRef.current, { visibility: 'hidden', duration: 0.5 });
             setIsAnimating(false);
-          }}>
-            或者點擊這裡，再看一遍。
+          }} className='replay'>
+            點擊這裡，可再看一遍。
           </p>
           <p className="last-smile">:)</p>
-        </Nine>
+        </Nine> */}
       </Container>
     </>
   );

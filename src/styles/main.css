@@ -27,6 +27,9 @@ html {
     right: 0;
     top: 20vh;
   }
+  .to {
+    font-size: 2rem;
+  }
   
   .one {
     font-size: 4.5rem;
